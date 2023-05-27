@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moja strona z JavaScriptem</title>
+  <script>
+    function powitanie() {
+      var imie = prompt("Jak masz na imię?");
+      if (imie) {
+        var powitanie = "Witaj, " + imie + "!";
+        document.getElementById("powitanie").textContent = powitanie;
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Witaj na mojej stronie z JavaScriptem!</h1>
+  <button onclick="powitanie()">Kliknij mnie</button>
+  <p id="powitanie"></p>
+</body>
+</html>
